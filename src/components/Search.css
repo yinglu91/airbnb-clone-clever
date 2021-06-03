@@ -14,12 +14,12 @@
   background-color: white;
   position: absolute;
   left: 0;
-  top: 325px;
+  top: 328px;
 }
 
 .search > input {
   width: 539px;
-  padding: 20px;
+  padding: 0 20px;
   position: absolute;
   left: 0;
   height: 30px;
@@ -34,7 +34,7 @@
 .search > button {
   position: absolute;
   left: 0;
-  top: 480px;
+  top: 420px;
   text-transform: inherit !important;
   background-color: #ff7779;
   color: white;
