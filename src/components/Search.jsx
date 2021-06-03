@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Search.css';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
@@ -7,15 +7,15 @@ import { Button } from '@material-ui/core';
 import PeopleIcon from '@material-ui/icons/People';
 import { useHistory } from 'react-router-dom';
 
-// DATE PICKER COMPONENT
+// date picker component
 function Search() {
   const history = useHistory();
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
   const selectionRange = {
-    startDate: startDate,
-    endDate: endDate,
+    startDate,
+    endDate,
     key: 'selection',
   };
 
