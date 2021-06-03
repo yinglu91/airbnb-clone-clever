@@ -14,12 +14,13 @@ const Banner = () => {
     <div className="banner">
       <div className="banner__search">
         {showSearch && <Search />}
+
         <Button
           className="banner__seachButton"
           variant="outlined"
           onClick={taggleShowSearch}
         >
-          Search Dates
+          {showSearch ? 'Hide' : 'Search Dates'}
         </Button>
       </div>
 
